@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const listItem = document.createElement("li");
 
     // Create a span for the task text
-    const taskSpan = document.createElement("span");
-    taskSpan.className = "task-text";
+    const taskSpan = document.createElement("span").classList.add("task-text");
+    // taskSpan.className = "task-text";
     taskSpan.textContent = taskText;
 
     // Create a new button element for removing the task
